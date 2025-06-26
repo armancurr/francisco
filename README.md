@@ -14,20 +14,9 @@ bun add francisco
 
 ```tsx
 // app/layout.tsx
-import type { Metadata } from "next";
 import { sfSans, sfMono } from "francisco";
-import "./globals.css";
+...
 
-export const metadata: Metadata = {
-  title: "My Next.js App",
-  description: "Powered by Francisco fonts",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
   return (
     <html lang="en" className={`${sfSans.variable} ${sfMono.variable}`}>
       <body className="font-sans">{children}</body>
@@ -41,7 +30,7 @@ export default function RootLayout({
 ```css
 /* app/globals.css */
 .font-sans {
-  font-family: var(--font-sf-sans), SFProDisplay-Regular, system-ui, sans-serif;
+  font-family: var(--font-sf-sans), SFProDisplay-Regular, sans-serif;
 }
 
 .font-mono {
