@@ -1,0 +1,33 @@
+{
+  "name": "francisco",
+  "version": "0.0.2",
+  "description": "Installable font package for using SF Pro Display and SF Mono in Next.js + Tailwind projects.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "fonts"
+  ],
+  "scripts": {
+    "build": "tsc && bun scripts/copy-fonts.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "fonts",
+    "sf-pro",
+    "sf-mono",
+    "nextjs",
+    "tailwind"
+  ],
+  "author": "Arman",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "^1.2.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "next": "^15.3.4"
+  }
+}
