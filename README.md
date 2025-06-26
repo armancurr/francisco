@@ -5,9 +5,7 @@ A font package for using Apple's SF Pro Display and SF Mono fonts in Next.js pro
 ## Installation
 
 ```bash
-npm install francisco
-# or
-bun add francisco
+npm i francisco
 ```
 
 ### Step 1: Update Your Layout
