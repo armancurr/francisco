@@ -1,12 +1,12 @@
 Francisco is a plug-and-play font package that lets you easily use Apple’s SF Pro Display and SF Mono system fonts in Next + Tailwind projects. It simplifies font setup by exposing ready-to-use classes, CSS variables, and optimized font loading—no manual configuration, font files, or custom loaders required.
 
-## Installation
+### Installation
 
 ```bash
 npm i francisco
 ```
 
-### Step 1: Update Your Layout
+### 1: Update Your Layout
 
 ```tsx
 // app/layout.tsx
@@ -21,7 +21,7 @@ import { sfSans, sfMono } from "francisco";
 }
 ```
 
-### Step 2: Configure Fonts in `globals.css`
+### 2: Configure Fonts in `globals.css`
 
 ```css
 /* app/globals.css */
@@ -34,7 +34,7 @@ import { sfSans, sfMono } from "francisco";
 }
 ```
 
-### Step 3: Use the Fonts
+### 3: Use the Fonts
 
 You can now use the `font-mono` utility class to apply the mono font. The sans-serif font is applied by default.
 
