@@ -12,7 +12,7 @@ if (!existsSync(distDir)) {
 }
 
 const fontsSource = path.join(__dirname, "..", "fonts");
-const fontsDest = path.join(distDir, "..", "fonts");
+const fontsDest = path.join(__dirname, "..", "dist", "fonts");
 
 async function copyDir(src: string, dest: string): Promise<void> {
   if (!existsSync(dest)) {
@@ -37,7 +37,7 @@ async function copyDir(src: string, dest: string): Promise<void> {
 
 if (existsSync(fontsSource)) {
   await copyDir(fontsSource, fontsDest);
-  console.log("Fonts copied successfully using Bun's optimized file I/O");
+  console.log("Fonts copied to dist/fonts");
 } else {
   console.warn("Fonts directory not found");
 }

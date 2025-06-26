@@ -40,14 +40,12 @@ export default function RootLayout({
 
 ```css
 /* app/globals.css */
-@layer base {
-  body {
-    font-family: var(--font-sf-sans), system-ui, sans-serif;
-  }
+.font-sans {
+  font-family: var(--font-sf-sans), SFProDisplay-Regular, system-ui, sans-serif;
+}
 
-  .font-mono {
-    font-family: var(--font-sf-mono), SFMono-Regular, monospace;
-  }
+.font-mono {
+  font-family: var(--font-sf-mono), SFMono-Regular, monospace;
 }
 ```
 
@@ -57,10 +55,10 @@ You can now use the `font-mono` utility class to apply the mono font. The sans-s
 
 ```tsx
 // app/page.tsx
-export default function HomePage() {
+export default function Page() {
   return (
-    <main className="p-24">
-      <h1 className="text-4xl font-bold">SF Pro Display (Sans-Serif)</h1>
+    <main className="p-24 font-sans">
+      <h1 className="text-4xl">SF Pro Display</h1>
       <p className="mt-4">This is the body text, rendered in SF Pro Display.</p>
       <code className="block mt-8 p-4 bg-gray-100 rounded-md font-mono text-lg">
         This is some code, rendered in SF Mono.

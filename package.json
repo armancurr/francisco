@@ -1,14 +1,21 @@
 {
   "name": "francisco",
-  "version": "0.0.2",
-  "description": "Installable font package for using SF Pro Display and SF Mono in Next.js + Tailwind projects.",
+  "version": "1.0.1",
+  "description": "A font package for using Apple's SF Pro Display and SF Mono fonts in Next.js projects.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "fonts"
+    "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/armancurr/francisco.git"
+  },
+  "homepage": "https://github.com/armancurr/francisco#readme",
+  "bugs": {
+    "url": "https://github.com/armancurr/francisco/issues"
+  },
   "scripts": {
     "build": "tsc && bun scripts/copy-fonts.ts",
     "prepublishOnly": "bun run build"
@@ -19,7 +26,7 @@
     "sf-mono",
     "nextjs",
     "tailwind"
-  ],
+  ],  
   "author": "Arman",
   "license": "MIT",
   "devDependencies": {
