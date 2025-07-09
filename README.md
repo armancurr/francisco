@@ -1,6 +1,4 @@
-Francisco is a plug-and-play font package that lets you easily use Apple’s SF Pro Display and SF Mono system fonts in Next + Tailwind projects. It simplifies font setup by exposing ready-to-use classes, CSS variables, and optimized font loading—no manual configuration, font files, or custom loaders required.
-
-### Installation
+## Installation
 
 ```bash
 npm i francisco
